@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fabulous Timer</title>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header>
+          <div class="logo-wrapper"><img src="assets/images/logo.png" /></div>
+        </header>
+        <div class="timer">
+          <div><img src="assets/images/steps.svg" class="resp-img" /></div>
+          <div class="timer__plan">
+            <div class="timer__text-wrapper">
+              <p class="text--white">
+                Your personalized plan has been reserved for the next 15
+                minutes.
+              </p>
+              <button class="button button--claim">
+                Claim your free trial now
+              </button>
+              <div class="clock">
+                <img src="assets/images/clock.png" />
+                <p class="text--white">Time remaining</p>
+              </div>
+              <div id="time-wrapper" class="text--white">
+                <span id="hours"></span> : <span id="mins"></span> :
+                <span id="seconds"></span>
+              </div>
+            </div>
+          </div>
+          <div class="timer__form-wrapper">
+            <h1>Set up your credit or debit card</h1>
+            <div class="credit-cards">
+              <img src="assets/images/credit-cards.svg" />
+            </div>
+            <form>
+              <input
+                type="text"
+                placeholder="First Name"
+                aria-label="First Name"
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                aria-label="Last Name"
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                aria-label="Email Address"
+              />
+              <input
+                type="text"
+                placeholder="Card Number (16 digits)"
+                aria-label="Card Number (16 digits)"
+              />
+
+              <div class="exp-date">
+                <input type="text" placeholder="MM" aria-label="MM" />
+                <input type="text" placeholder="YY" aria-label="YY" />
+                <input type="password" placeholder="CVV" aria-label="CVV" />
+              </div>
+
+              <div class="whats-cvv">
+                <img src="assets/images/q-mark.png" />
+                <p>What's CVV?</p>
+              </div>
+              <div class="selected-plan">
+                <h2>Your selected Plan</h2>
+                <p>
+                  Unlimited Behavioral Change Journeys. $39.99 per year after
+                  Free Week
+                </p>
+              </div>
+
+              <p class="terms">
+                By clicking the button below, you agree to our
+                <a href="#">Terms of Use</a> and that you are over 18 and
+                acknowledge the <a href="#">Privacy Statement</a>. You will be
+                charged $1.00 today and every month for the next 3 months. After
+                which, you will be charged a cost of $39.99 for an annual
+                subscription. Fabulous will automatically continue your
+                membership on an annual basis until you cancel.
+              </p>
+
+              <button type="submit" class="button button--submit">
+                USE FREE FOR A WEEK
+              </button>
+              <p class="no-commitments">
+                No commitments. Cancel online at anytime.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
