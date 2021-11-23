@@ -1,5 +1,5 @@
 $(function () {
-  const endTime = new Date("Thu Nov 23 2021 21:00:00 GMT+0200").getTime();
+  const endTime = new Date("Thu Nov 24 2021 18:00:00 GMT+0200").getTime();
   let currentTime, timeLeft, days, hours, mins, seconds;
 
   const MIN_IN_MSECONDS = 1000 * 60;
@@ -25,12 +25,14 @@ $(function () {
       mins = getInt((timeLeft % HOUR_IN_MSECONDS) / MIN_IN_MSECONDS);
       seconds = getInt((timeLeft % MIN_IN_MSECONDS) / 1000);
 
-      $("#days").text(days);
       $("#hours").text(hours);
       $("#mins").text(mins);
       $("#seconds").text(seconds);
     } else {
       clearInterval(intervalId);
+      $("#hours").text("00");
+      $("#mins").text("00");
+      $("#seconds").text("00");
     }
   }
 
